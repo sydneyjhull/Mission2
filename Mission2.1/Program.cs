@@ -10,8 +10,12 @@ namespace Mission2
             Random r = new Random();
             int numRolls;
 
+
+            // messages that will show to the reader
             Console.WriteLine("Welcome to the dice throwing simulator! \n");
+            //asks for how many times to roll the dice
             Console.WriteLine("How many dice rolls would you like to simulate? \n");
+            // puts that user input as the number of Rolls
             numRolls = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("DICE ROLLING SIMULATION RESULTS");
@@ -34,12 +38,12 @@ namespace Mission2
             {
                 float percent = ( array[i] / (float)numRolls) * 100; // This is taking the number in the array slot and dividing it by the total number of rolls to get the percentage
                 int rounded = Convert.ToInt32(Math.Round(percent)); // rounding the percent
-                string output = "";
+                string output = ""; //creates the string output
                 for (int f = 0; f < rounded; f++)
                 {
-                    output = (output + "*");
+                    output = (output + "*"); //takes the output and adds a new star to the correct number in the array
                 }
-                Console.WriteLine(i + ": " + output);
+                Console.WriteLine(i + ": " + output); //outputs the complete string
             }
         }
     }
