@@ -7,8 +7,8 @@ namespace Mission2
         public static void Main(string[] args)
         
         {
-            Random r = new Random();
-            int numRolls;
+            Random r = new Random(); //brings in the Random library
+            int numRolls; //creates the number of rolls as an integer
 
 
             // messages that will show to the reader
